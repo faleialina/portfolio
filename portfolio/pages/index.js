@@ -53,8 +53,7 @@ export default function Home() {
           <div className={style.imgEducation}></div>
           <div className={style.education}>
             <p>Education</p>
-            <p>1. Belarusian State</p>
-            <p>Technological University</p>
+            <p>1. Belarusian State Technological University</p>
             <p>2. HSchool</p>
           </div>
         </div>

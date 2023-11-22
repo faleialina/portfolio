@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(../public/fonts/Poppins-Light.ttf) format('truetype'),
+    url(../public/fonts/Poppins-Medium.ttf) format('truetype'),
+    url(../public/fonts/Poppins-Regular.ttf) format('truetype'),
+    url(../public/fonts/Poppins-SemiBold.ttf) format('truetype');
+}
+
 .wrapper {
   width: 595px;
-  /* width: 100%; */
   height: 100vh;
   background-color: black;
   margin: auto;
@@ -33,49 +40,42 @@
 
 .info h1 {
   color: var(--White, #F5F8FF);
-  font: 900 24px Poppins;
-  margin-bottom: 10px;
+  font: 900 24px 'Poppins';
 }
 
 .info p {
   color: var(--White, #F5F8FF);
-  font: 600 12px Poppins;
-  margin-bottom: 8px;
+  font: 600 12px 'Poppins';
 }
 
 .title {
   color: var(--White, #F5F8FF);
   align-items: flex-start;
-  font: 900 16px Poppins;
+  font: 900 16px 'Poppins';
   text-transform: uppercase;
   margin-top: 40px;
   margin-bottom: 16px;
   padding-left: 45px;
-  /* text-align: center; */
 }
 
 .job h1 {
   color: var(--White, #F5F8FF);
-  font: 500 16px Poppins;
-  margin-bottom: 10px;
+  font: 500 16px 'Poppins';
 }
 
 .job h2 {
   color: var(--White, #F5F8FF);
-  font: 500 10px Poppins;
-  margin-bottom: 10px;
+  font: 500 10px 'Poppins';
 }
 
 .job p {
   color: var(--White, #F5F8FF);
-  font: 300 10px Poppins;
-  margin-bottom: 8px;
+  font: 300 10px 'Poppins';
 }
 
 .skils p {
   color: var(--White, #F5F8FF);
-  font: 300 10px Poppins;
-  margin-bottom: 8px;
+  font: 300 10px 'Poppins';
 }
 
 .educationLanguage {
@@ -84,36 +84,38 @@
   margin: auto;
   gap: 30px;
   margin-top: 16px;
-
 }
 
 .educationBlock,
 .languageBlock {
   display: flex;
   width: 200px;
-  height: 90px;
   background-color: rgb(47, 46, 46);
   border-radius: 24px;
   background: var(--balck, radial-gradient(205.3% 154.51% at 91.33% -10.25%, #212225 0%, #1F2025 100%));
   padding: 24px;
-  margin: auto;
   margin-bottom: 16px;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.education,
+.language {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
 }
 
 .education p,
 .language p {
   color: var(--White, #F5F8FF);
-  font: 400 12px Poppins;
-  margin-bottom: 10px;
+  font: 400 12px 'Poppins';
 }
 
 .imgEducation {
   background-image: url('../public/assets/Icon\ \(3\).svg');
-  background-size: contain;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 32px;
   height: 32px;
 }
@@ -122,7 +124,6 @@
   background-image: url('../public/assets/Icon.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: cover;
   width: 32px;
   height: 32px;
 }
@@ -131,15 +132,13 @@
   background-image: url('../public/assets/portfolio\ qr.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: cover;
   width: 74px;
   height: 74px;
-
 }
 
 .infoPortfolio h1 {
   color: var(--White, #F5F8FF);
-  font: 600 14px Poppins;
+  font: 600 14px 'Poppins';
   text-transform: uppercase;
   margin-bottom: 16px;
   text-align: center;
@@ -147,7 +146,7 @@
 
 .infoPortfolio a {
   color: var(--gray, #C2C2C2);
-  font: 300 12px Poppins;
+  font: 300 12px 'Poppins';
   text-transform: uppercase;
   margin-top: 40px;
   margin-bottom: 16px;
