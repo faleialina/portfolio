@@ -8,7 +8,6 @@
 
 .wrapper {
   width: 595px;
-  height: 100vh;
   background-color: black;
   margin: auto;
   padding: 12px;
@@ -129,11 +128,12 @@
 }
 
 .qr {
-  background-image: url('../public/assets/portfolio\ qr.svg');
-  background-size: contain;
+  background-image: url('../public/assets/qr.jpeg');
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 74px;
-  height: 74px;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
 }
 
 .infoPortfolio h1 {
